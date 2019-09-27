@@ -81,6 +81,7 @@ void PerspectiveCorrection::FixStuff()
 	if (!this->hackInstalled)
 	{
 		HMODULE baseModule = GetModuleHandle(NULL);
+		UnprotectModule(baseModule);
 
 		*(short*)((DWORD)baseModule + 0x20355C) = this->Width;
 		*(short*)((DWORD)baseModule + 0x203560) = this->Height;
