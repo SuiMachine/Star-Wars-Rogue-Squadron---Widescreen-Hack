@@ -34,6 +34,7 @@
 
 # Debug build
 Debug/
+Debug-Wrapper/*
 # Release static lib
 
 
@@ -42,6 +43,14 @@ Debug/
 
 # Intermediate build directories
 LibRelease/*
+Rogue-Squadron-ASI/Debug/*
+Rogue-Squadron-ASI/Release/*
+Rogue-Squadron-Wrapper/Debug/*
+Rogue-Squadron-Wrapper/Debug-Wrapper/*
+Rogue-Squadron-Wrapper/Release/*
+WidescreenHackLib/Debug/*
+WidescreenHackLib/Debug-Wrapper/*
+WidescreenHackLib/Release/*
 
-Star-Wars-Rogue-Squadron-fix/Debug/*
-Star-Wars-Rogue-Squadron-fix/Release/*
+# Unfinished dirs
+Release/Wrapper/*

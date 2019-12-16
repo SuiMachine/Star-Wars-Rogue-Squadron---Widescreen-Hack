@@ -58,7 +58,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetExt>.asi</TargetExt>
-    <OutDir>..\..\..\Steam\steamapps\common\RogueSquadron\ROGUE\Scripts</OutDir>
+    <OutDir>..\..\..\Steam\steamapps\common\RogueSquadron\ROGUE\Scripts\</OutDir>
     <LibraryPath>../Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Wrapper|Win32'">
