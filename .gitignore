@@ -41,5 +41,7 @@ Debug/
 *.zip
 
 # Intermediate build directories
+LibRelease/*
+
 Star-Wars-Rogue-Squadron-fix/Debug/*
 Star-Wars-Rogue-Squadron-fix/Release/*

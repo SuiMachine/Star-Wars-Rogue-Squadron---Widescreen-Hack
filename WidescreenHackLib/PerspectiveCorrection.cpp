@@ -1,5 +1,5 @@
 #include "PerspectiveCorrection.h"
-#include "HookFunctions.h"
+#include "../externals/HookFunctions/HookFunctions.h"
 #define PI_VALUE 3.141592f
 
 DWORD jmpFovAddress;
@@ -35,9 +35,9 @@ void __declspec(naked) removeRadarJunk()
 		pop eax
 		jmp jmpRadarAddress
 
-		blank:
+		blank :
 		fmul[zero]
-		jmp jmpRadarAddress
+			jmp jmpRadarAddress
 	}
 }
 
@@ -68,9 +68,9 @@ void __declspec(naked) fovHack()
 	}
 }
 
-PerspectiveCorrection::PerspectiveCorrection()
+PerspectiveCorrection::PerspectiveCorrection(const char * configPath)
 {
-	CIniReader reader("");
+	CIniReader reader(configPath);
 	this->Width = reader.ReadInteger("MAIN", "Width", 640);
 	this->Height = reader.ReadInteger("MAIN", "Height", 480);
 
@@ -92,8 +92,7 @@ void PerspectiveCorrection::FixStuff()
 		HookInsideFunction((DWORD)baseModule + 0xD520C, fovHack, &jmpFovAddress, 7);
 		transparencyAddy = (DWORD*)((DWORD)baseModule + 0x304CC0);
 		HookInsideFunction((DWORD)baseModule + 0x7B5DC, removeRadarJunk, &jmpRadarAddress, 6);
-		
+
 		this->hackInstalled = true;
 	}
-
 }

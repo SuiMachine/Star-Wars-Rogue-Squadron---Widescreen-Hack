@@ -5,7 +5,7 @@
 class PerspectiveCorrection
 {
 public:
-	PerspectiveCorrection();
+	PerspectiveCorrection(const char * configPath);
 	void FixStuff();
 private:
 	bool hackInstalled = false;

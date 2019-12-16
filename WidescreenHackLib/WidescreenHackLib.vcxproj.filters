@@ -15,22 +15,14 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Versioninfo.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="WidescreenHackLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="PerspectiveCorrection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RogueSquadron-fix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HookFunctions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="PerspectiveCorrection.h">
       <Filter>Header Files</Filter>
     </ClInclude>

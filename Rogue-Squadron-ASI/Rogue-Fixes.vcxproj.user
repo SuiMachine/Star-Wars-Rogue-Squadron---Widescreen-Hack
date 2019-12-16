@@ -7,4 +7,10 @@
     <LocalDebuggerCommandArguments>
     </LocalDebuggerCommandArguments>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Wrapper|Win32'">
+    <LocalDebuggerCommand>D:\Steam\steamapps\common\RogueSquadron\ROGUE\Rogue Squadron.EXE.unpacked.exe</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>D:\Steam\steamapps\common\RogueSquadron\ROGUE</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments />
+  </PropertyGroup>
 </Project>
